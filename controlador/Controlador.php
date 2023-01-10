@@ -1,5 +1,5 @@
 <?php
-require_once "Modelo/modelo.php";
+require_once "../Modelo/modelo.php";
 $Usuario = new Usuario();
 
 
@@ -16,7 +16,8 @@ $insertar = $Usuario->guardar($nombre, $usuario, $telefono);
 
 if($insertar == true){
     echo "Registro exitoso";
-}else{
+}
+if($insertar == false){
     echo "No se registro";
 }
 
