@@ -1,5 +1,6 @@
+<?php
 require_once "Modelo/modelo.php";
-$guardarN= new Usuario();
+$Usuario = new Usuario();
 
 
 
@@ -11,12 +12,15 @@ $usuario = $_POST[usuario];
 $telefono = $_POST[telefono];
 
 
-$insertar = $guardarN->guardar($nombre, $usuario, $telefono);
+$insertar = $Usuario->guardar($nombre, $usuario, $telefono);
 
 if($insertar == true){
     echo "Registro exitoso";
+}else{
+    echo "No se registro";
 }
 
 break;
 }
+?>
 
