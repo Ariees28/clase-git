@@ -11,9 +11,9 @@ class Usuario{
         $sql = $this->db->prepare("INSERT INTO tablaprueba (Tab_Nom, Tab_Usu, Tab_Tel) VALUE(?,?,?)");
         try{
             $sql->execute([$no, $us, $tel]);
-            return $sql;
+            return true;
         }catch (Exception $e){
-            return $e->getMessage();
+            return false;
         }
     }
 }

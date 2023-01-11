@@ -7,7 +7,8 @@ class Conexion
     {
         //$prueba = "jaja";
         $usuario = "root";
-        $contra = "";
+        $contra = "root";
+        //$contra = "";
         $conn = new PDO("mysql:host=localhost;dbname=claseGit", $usuario, $contra);
         return $conn;
     }

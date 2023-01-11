@@ -4,7 +4,7 @@ function guardar(e) {
   var usuario = $("#usuario").val();
   var telefono = $("#telefono").val();
   $.post(
-    "controlador/Controlador.php?op=usuario",
+    "controlador/Controlador.php?op=prueba",
     { nombre: nombre, usuario: usuario, telefono: telefono },
     function (res) {
       alert(res);
