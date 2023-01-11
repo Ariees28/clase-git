@@ -26,7 +26,7 @@ switch ($_GET["op"]) {
     case "prueba":
         $nombre = $_POST['nombre'];
         $usuario = $_POST['usuario'];
-        $telefono = $_POST['telefono'];
+        $contra = $_POST['contra'];
 
         echo LimpiarInput($nombre);
     break;
