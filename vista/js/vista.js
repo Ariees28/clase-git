@@ -5,10 +5,11 @@ function guardar(e) {
   e.preventDefault();
   var nombre = $("#nombre").val();
   var usuario = $("#usuario").val();
-  var telefono = $("#telefono").val();
+  var contra = $("#contraseña").val();
   $.post(
     "../../controlador/Controlador.php?op=prueba",
-    { nombre: nombre, usuario: usuario, telefono: telefono },
+    { nombre: nombre, usuario: usuario, contra: contraseña},
+
     function (res) {
       alert(res);
     }
@@ -27,6 +28,7 @@ function validarFormulaio() {
   }
   if ($("#telefono").val() == "") {
     error = error+"el Telefono esta vacio y no deve ser asi.";
+
     x = false;
   }
   return x;
